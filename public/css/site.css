@@ -1,0 +1,891 @@
+/*GLOBAL*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /*text-decoration: none;*/
+    font-family: 'Ubunt', sans-serif;
+}
+
+.card-img{
+    width: 100% !important;
+}
+
+.hrRed{
+    border-top: 1px solid red !important;
+}
+
+.block-loading {
+    z-index:9999;
+    background: url(../img/ajax-loader.gif) #eee center center no-repeat;
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index:999;
+    opacity:0.3;
+}
+
+.badge-danger{
+    background: red !important;
+    color: white !important;
+}
+
+ul, ol{
+    padding: 0px;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+    list-style: none;
+    text-decoration: none;
+}
+
+.barraSuperior{
+    background: black;
+}
+
+.barraSuperior a{
+    color: white;
+}
+
+.backColor, .backColor a{
+    background: #47bac1;
+    color: white;
+}
+
+/* REDES SOCIALES */
+
+.redSocial{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/*FACEBOOK*/
+
+.facebookBlanco{
+    color: white;
+}
+
+.facebookNegro{
+    color: black;
+}
+
+.facebookColor{
+    color: white;
+    background: #46639f;
+}
+
+/*YOUTUBE*/
+
+.youtubeBlanco{
+    color: white;
+}
+
+.youtubeNegro{
+    color: black;
+}
+
+.youtubeColor{
+    color: white;
+    background: #d6513e;
+}
+
+/*INSTAGRAM*/
+
+.instagramBlanco{
+    color: white;
+}
+
+.instagramNegro{
+    color: black;
+}
+
+.instagramColor{
+    color: white;
+    background: linear-gradient(45deg, #fca925, #ee1d5f, #6350a2);
+}
+
+/*=============================================
+ERROR 404
+=============================================*/
+
+.error404{
+	color:#333;
+}
+
+/*=============================================
+SCROLL UP
+=============================================*/
+#scrollUp{
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/promoMundial/plantilla/flecha.jpg);
+}
+
+/*CABEZOTE*/
+#top ul{
+    padding-top: 8px;
+}
+
+#top ul li{
+    display: inline;
+    line-height: 30px;
+    margin: 0px 5px;
+    color: white;
+}
+
+.social ul li a i{
+    font-size: 18px;
+    margin: 0 1px;
+}
+
+.registro ul{
+    text-align: right;
+    font-size: 12px;
+}
+
+
+/*HEADER*/
+
+header #logotipo img{
+    padding: 20px 60px;
+    padding-left: 0px;
+}
+
+header #btnCategorias{
+    margin: 20px 0;
+}
+
+header #btnCategorias p{
+    line-height: 40px;
+    margin-bottom: 0px;
+}
+
+header #btnCategorias p span{
+    cursor: pointer;
+}
+
+header #buscador{
+    margin: 20px 0;
+}
+
+header #buscador input{
+    padding: 19px;
+    border-radius: 0;
+}
+
+header #buscador button{
+    padding: 9px;
+    border: 1px solid silver;
+    border-radius: 0;
+}
+
+header #carrito{
+    margin: 20px 0;
+}
+
+header #carrito a{
+    padding: 9px 15px;
+    border: 1px solid silver;
+    border-radius: 0;
+}
+
+header #carrito p{
+    padding: 2px;
+    padding-left: 60px;
+    border: 1px solid #aaa;
+    font-size: 12px;
+}
+
+header #categorias{
+    display: none;
+    margin-top: -10px;
+    position: relative;
+}
+
+header #categorias h4{
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+header #categorias hr{
+    border: 1px solid rgba(255,255,255,.3);
+}
+
+/* SLIDE*/
+
+#slide{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+#slide ul{
+    position: relative;
+    left: 0%;
+    margin: auto;
+    height: auto;
+    width: 400%;
+    clear: both;
+    display: table;
+}
+
+#slide ul li{
+    position: relative;
+    float: left;
+    width: 25%;
+}
+
+#slide ul li img{
+    width: 100%;
+}
+
+#slide .slideOpcion1 img{
+    position: absolute;
+    opacity: 1;
+
+}
+
+#slide .slideOpcion1 .textosSlide{
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 10%;
+}
+
+#slide .slideOpcion2 img{
+    position: absolute;
+    opacity: 1;
+
+}
+
+#slide .slideOpcion2 .textosSlide{
+    position: absolute;
+    text-align: right;
+    width: 40%;
+    top: 15%;
+    right: 15%;
+}
+
+#slide .slideOpciones h1{
+    text-transform: uppercase;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+}
+
+#slide .slideOpciones h2{
+    text-transform: uppercase;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+}
+
+#slide .slideOpciones h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+}
+
+#slide .slideOpciones a{
+    border: 0px;
+    margin-top: 10px;
+    opacity: 1;
+    top: -10%;
+}
+
+#slide .slideOpciones a:hover{
+    background: black;
+    color: white;
+    border: 0px;
+}
+
+#slide slide opciones,a span{
+    margin-left: 10px;
+}
+
+
+/* FLECHAS */
+
+#slide .flechas{
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#slide #retroceder{
+    background: #666;  
+    left: 0;
+    opacity: 0;
+}
+
+#slide #avanzar{
+    background: #666;
+    right: 0;
+    opacity: 0;
+}
+
+#slide #retroceder:hover, #slide #avanzar:hover{
+    background: #777;
+}
+
+#slide #retroceder:active, #slide #avanzar:active{
+    background: #444;
+}
+
+/* PAGINACION */
+
+#slide #paginacion{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+    background: rgba(0,0,0,.05);
+}
+
+#slide #paginacion li{
+    display: inline-block;
+    margin: 0px 5px;
+    cursor: pointer;
+    opacity: .5;
+    color: white;
+    text-shadow: 0px 0px 5px #333;
+}
+
+#slide #paginacion li:first-child{
+    opacity: 1;
+}
+
+#btnSlide{
+    width: 150px;
+    border: 0px;
+    font-size: 25px;
+    padding: 2px;
+}
+
+/* BANNER */
+
+.banner{
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.banner .textoBanner{
+    position: absolute;
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.banner .textoDer{
+    top: 50px;
+    right: 50px;
+    text-align: right;
+}
+
+.banner .textoIzq{
+    top: 50px;
+    left: 50px;
+    text-align: left;
+}
+
+.banner .textCentro{
+    top: 50px;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    text-align: center;
+}
+
+
+.textoBanner h1{
+    font-size: 35px;
+    line-height: 25px;
+}
+
+.textoBanner h2{
+    font-size: 30px;
+    line-height: 25px;
+}
+
+.textoBanner h3{
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.bannerScore{
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+/* BARRA PRODUCTOS */
+.barraProductos .organizarProductos span{
+    margin-left: 5px;
+}
+
+/* VITRINA PRODUCTOS CUADRÍCULA */
+
+.tituloDestacado h1{
+    margin-top: -5px;
+}
+
+.tituloDestacado button span{
+    margin-left: 5px;
+}
+
+.productos ul li figure{
+    overflow: hidden;
+}
+
+.productos ul li a img:hover{
+    transition: .3s all ease;
+    opacity: .8;
+    transform: scale(1.1,1.1);
+}
+
+.productos ul li h4 small{
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.productos ul li h4 small a{
+    color: #777;
+}
+
+.productos ul li div .precio{
+    padding: 0;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+
+.productos ul li div .enlaces{
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.productos ul li div .enlaces button{
+    margin: 2px;
+}
+
+.productos ul li div .enlaces button i{
+    color: #999;
+    font-size: 12px;
+}
+
+/* VITRINA PRODUCTOS LISTA */
+.productos ul li h1{
+    margin-top: -10px;
+}
+
+.productos ul li h1 small{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.productos ul li h1 small a{
+    color: #777;
+}
+
+.oferta{
+    text-decoration: line-through;
+    color: red;
+    font-size: 15px;
+}
+
+.fontSize{
+ font-size: 11px;                                                                  
+}
+
+/*=============================================
+CARRITO DE COMPRAS
+=============================================*/
+.cabeceraCarrito{
+	height:40px;
+}
+
+.cabeceraCarrito h3{
+	margin-top:-5px
+}
+
+.cabeceraCheckout{
+	height:66px;
+}
+
+/*=============================================
+CHECKOUT
+=============================================*/
+
+.contenidoCheckout, .contenidoCheckout .row{
+	padding:0px 20px;
+}
+
+.formEnvio{
+	display:none;
+}
+
+/* ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)*/
+@media(min-width:1200px){
+
+    .col-lg-0{
+        display: none;
+    }
+
+    .error404 h1{
+		font-size:300px;
+		text-shadow:8px 8px 1px #dadada;
+	}
+
+    /* HEADER */
+    header #logotipo img{
+        padding: 20px 60px;
+        padding-left: 0px;
+    }
+
+    header #carrito{
+        padding-left: 100px;
+    }
+
+    /* SLIDE */
+    #slide .slideOpciones h1{
+        font-size: 50px;
+        margin-top: 5px;
+    }
+
+    #slide .slideOpciones h2{
+        font-size: 35px;
+    }
+
+    #slide .slideOpciones h3{
+        font-size: 30px;
+    }
+
+    #slide .slideOpciones a{
+        padding: 10px;
+    }
+
+    /* FLECHAS */
+    #slide #retroceder{
+       top: 37%;
+       padding: 40px 15px 40px 10px;
+       font-size: 22px;
+    }
+
+    #slide #avanzar{
+       top: 37%;
+       padding: 40px 10px 40px 15px;
+       font-size: 22px;
+    }
+
+    .banner{
+		height:320px;
+	}
+}
+
+/* ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)*/
+@media(max-width: 1199px) and (min-width: 992px){
+    
+    .col-md-0{
+        display: none;
+    }
+
+    .error404 h1{
+		font-size:200px;
+		text-shadow:6px 6px 1px #dadada;
+	}
+
+    /* HEADER */
+    header #logotipo img{
+        padding: 25px 60px;
+        padding-left: 0px;
+    }
+
+    header #carrito{
+        padding-left: 70px;
+    }
+
+    /* SLIDE */
+    #slide .slideOpciones h1{
+        font-size: 35px;
+        margin-top: 5px;
+    }
+
+    #slide .slideOpciones h2{
+        font-size: 30px;
+    }
+
+    #slide .slideOpciones h3{
+        font-size: 20px;
+    }
+
+    #slide .slideOpciones a{
+        padding: 10px;
+    }
+
+    /* FLECHAS */
+    #slide #retroceder{
+       top: 35%;
+       padding: 40px 15px 40px 10px;
+       font-size: 18px;
+    }
+
+    #slide #avanzar{
+       top: 35%;
+       padding: 40px 10px 40px 15px;
+       font-size: 18px;
+    }
+
+    .banner{
+		height:320px;
+	}
+
+}
+
+/* ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)*/
+@media(max-width: 991px) and (min-width: 768px){
+    
+    .col-sm-0{
+        display: none;
+    }
+
+    .error404 h1{
+		font-size:150px;
+		text-shadow:4px 4px 1px #dadada;
+	}
+
+    /* HEADER */
+    header #logotipo img{
+        padding: 30px 0px;
+    }
+
+    header #carrito{
+        padding-left: 55px;
+    }
+
+    header #carrito p{
+        display: none;
+    }
+
+    /* SLIDE */
+    #slide .slideOpciones h1{
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    #slide .slideOpciones h2{
+        font-size: 20px;
+    }
+
+    #slide .slideOpciones h3{
+        font-size: 15px;
+    }
+
+    #slide .slideOpciones a{
+        padding: 5px;
+    }
+
+    /* FLECHAS */
+    #slide #retroceder{
+       top: 35%;
+       padding: 30px 8px 30px 5px;
+       font-size: 14px;
+    }
+
+    #slide #avanzar{
+       top: 35%;
+       padding: 30px 5px 30px 8px;
+       font-size: 14px;
+    }
+
+    .banner{
+		height:200px;
+	}
+
+	.textoBanner h1{
+		font-size:30px;
+		line-height:15px;
+	}
+
+	.textoBanner h2{
+		font-size:25px;
+		line-height:15px;
+	}
+
+	.textoBanner h3{
+		font-size:25px;
+		line-height:15px;
+	}
+
+	.banner .textoDer, .banner .textoIzq, .banner .textoCentro{
+		top:35px; 
+	}
+
+}
+
+/* MOVIL (XS revisamos en 320px)*/
+@media(max-width: 767px){
+    
+    .col-xs-0{
+        display: none;
+    }
+
+    .error404 h1{
+		font-size:75px;
+		text-shadow:2px 2px 1px #dadada;
+	}
+
+    /* TOP */
+
+    #top ul{
+        text-align: center;
+    }
+
+    #top .registro{
+        border-top: 1px solid #222;
+    }
+
+
+    /* HEADER */
+    header #logotipo img{
+        padding: 30px;
+        padding-bottom: 10px;
+    }
+
+    header #categorias{
+        margin-bottom: 10px;
+    }
+
+    header #buscador{
+        margin-bottom: 10px;
+    }
+
+    header #carrito{
+        margin: 0px;
+    }
+
+    /* SLIDE */
+    #slide .slideOpciones h1{
+        font-size: 15px;
+        margin-bottom: -20px;
+        margin-top: 5px;
+    }
+
+    #slide .slideOpciones h2{
+        display: none;
+    }
+
+    #slide .slideOpciones h3{
+        font-size: 10px;
+        margin-bottom: -5px;
+    }
+
+    #slide .slideOpciones a{
+        font-size: 10px;
+        padding: 5px 5px;
+    }
+
+    /* FLECHAS */
+    #slide #retroceder, #slide #avanzar{
+        display: none;
+    }
+
+    .banner{
+		height:220px;
+	}
+
+	.banner .textoDer, .banner .textoCentro, .banner .textoIzq{
+		top:7px; 
+		left:50%;
+		width:800px; 
+		margin-left: -400px;
+		text-align:center;
+		text-shadow:2px 2px 20px black;
+	}
+
+	.textoBanner h1{
+		font-size:20px;
+		line-height:5px;
+	}
+
+	.textoBanner h2{
+		font-size:20px;
+		line-height:5px;
+	}
+
+	.textoBanner h3{
+		font-size:15px;
+		line-height:5px;
+	}
+
+	.tituloDestacado h1{
+		text-align:center;
+	}
+
+	.tituloDestacado button{
+		position: absolute;
+		left:50%;
+		width:40%;
+		margin-left:-20%;
+
+	}
+
+	.productos ul li h1 small{
+		font-size:16px;
+	}
+
+}
+
+
+
+.text-red{
+    color: red !important;
+    font-size: 16px;
+}
+
+
+
+.card-text-title{
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+.card-text-body{
+    padding-left: 10px;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.card-text-body p{
+    margin: 0px !important;
+}
+
+
+.btn-purple{
+    color: #fff !important;
+    background-color: #9c14d8;
+    border-color: #9214ca;
+}
+
+.btn-purple:hover{
+    background-color: #9214ca;
+}
