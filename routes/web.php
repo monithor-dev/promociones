@@ -18,4 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/crear_socio', 'SocioController@store')->name('crear_socio');
+Route::get('/form_nuevo_socio', 'SocioController@form_nuevo_socio');
+Route::post('/crear_socio', 'SocioController@store');

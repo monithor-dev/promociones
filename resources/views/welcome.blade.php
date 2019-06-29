@@ -1029,68 +1029,7 @@
     
     
     <br />
-    
-    
-    
-    <!-- Modal -->
-    <div class="modal fade in" id="myModalNorm" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Registrar datos</h4>
 
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    
-                </div>
-    
-                <!-- Modal Body -->
-                <div class="modal-body">
-    
-                    <form role="form" action="{{ route('crear_socio') }}" method="POST">
-
-                        @csrf
-    
-                      <div class="form-group">
-                        <label for="nombres">Nombres</label>
-                          <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Ingrese nombres" required />
-                      </div>
-    
-                      <div class="form-group">
-                        <label for="apellidos">Apellidos</label>
-                          <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Ingrese apellidos" required />
-                      </div>
-    
-                      <div class="form-group">
-                        <label for="celular">Celular</label>
-                          <input type="text" class="form-control" id="celular" name="celular" placeholder="Ingrese celular" required />
-                      </div>
-    
-                      <div class="form-group">
-                        <label for="correo">Correo</label>
-                          <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese correo" />
-                      </div>
-    
-                      <div class="form-group">
-                        <input type="hidden" id="curso" name="curso">
-                      </div>
-    
-                      <div class="form-group">
-                        <button type="submit" class="btn btn-primary form-control"><i class="fa fa-send"></i> Enviar</button>
-                      </div>
-    
-    
-                    </form>
-    
-    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
     
     <!-----------------------------/ INDEX ----------------------------------------------->
     

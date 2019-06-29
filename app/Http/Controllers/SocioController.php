@@ -7,25 +7,7 @@ use Illuminate\Http\Request;
 
 class SocioController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+   
 
     /**
      * Store a newly created resource in storage.
@@ -42,48 +24,42 @@ class SocioController extends Controller
         return 'hola';
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Socio  $socio
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Socio $socio)
+    public function crear_categoriacursos(Request $request)
     {
-        //
+        $rh = new \ResponseHelper();
+
+        $validator = Validator::make($request->all(), [
+            'nombre' => 'required|unique:categoria_cursos',
+        ]);
+
+        if($validator->fails()){
+            return view("mensajes.error")->with('rh', $rh)
+                                         ->withErrors($validator);
+        }
+
+        $categoria = new CategoriaCursos();
+        $categoria->nombre = $request->input("nombre");
+        $categoria->ruta = $request->input("ruta");
+
+        if($categoria->save())
+        {
+            $rh->response = true;
+            $rh->message = "Categoría agregada correctamente";
+            $rh->label = "Categoría creada";
+            $rh->form = "/form_nuevo_categoriacursos";
+            $rh->ruta = "admin.categoriacursos";
+            $rh->title = "Crear categoría";
+
+            return view("mensajes.correcto")->with('rh', $rh);
+        }
+        else
+        {
+            return view("mensajes.error")->with('rh', $rh);
+        }
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Socio  $socio
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Socio $socio)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Socio  $socio
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Socio $socio)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Socio  $socio
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Socio $socio)
-    {
-        //
+   
+    public function form_nuevo_socio(){
+        return view("create");
     }
 }
